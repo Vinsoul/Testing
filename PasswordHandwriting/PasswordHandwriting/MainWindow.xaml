@@ -1,0 +1,17 @@
+﻿<Window x:Class="PasswordHandwriting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordHandwriting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="350" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="ButtonCheck" Content="Проверить" HorizontalAlignment="Left" Margin="206,122,0,0" VerticalAlignment="Top" Width="100" FontSize="16" Click="Button_Click"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Введите пароль" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" FontSize="16" Width="130"/>
+        <TextBox x:Name="UserInput" HorizontalAlignment="Left" Height="23" Margin="133,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" FontSize="18" KeyDown="UserInput_KeyDown" KeyUp="UserInput_KeyUp"/>
+        <Button x:Name="ButtonNewPassword" Content="Новый пароль" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="117" Click="ButtonNewPassword_Click" FontSize="16"/>
+
+    </Grid>
+</Window>
